@@ -13,25 +13,29 @@
 
   selectElement.addEventListener("change", onChangeTextContentSwitch);
 
-  const calculateResult = (currency, amount) => {
+  const ChooseRate = (currency) => {
+    let finalRate;
     switch (currency) {
       case "eur":
-        return amount * rateEUR;
+        finalRate = rateEUR;
+        break;
 
       case "usd":
-        return amount * rateUSD;
+        finalRate = rateUSD;
+        break;
     }
+    return finalRate;
   };
 
   const updateResultText = (amount, result, currency) => {
     const resultElement = document.querySelector(".js-resultElement");
-    const outputParagraphElement = document.querySelector(
-      ".js-outputParagraph"
-    );
+    const outputBoxElement = document.querySelector(".js-outputBox");
+
+    outputBoxElement.classList.add("form__outputBox");
 
     resultElement.textContent = result.toFixed(2);
 
-    outputParagraphElement.innerHTML = `<strong>${amount.toFixed(
+    outputBoxElement.innerHTML = `<strong>${amount.toFixed(
       2
     )}</strong> ${currency.toUpperCase()} = <strong>${result.toFixed(
       2
@@ -46,7 +50,9 @@
 
     const currency = selectElement.value;
 
-    let result = calculateResult(currency, amount);
+    let finalRate = ChooseRate(currency);
+
+    let result = amount * finalRate;
 
     updateResultText(amount, result, currency);
   };
