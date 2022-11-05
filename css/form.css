@@ -1,3 +1,7 @@
+.form{
+    opacity: 95%;
+}
+
 .form__legend{
     background-color: hsl(180, 38%, 29%);
     color: white;
@@ -6,9 +10,11 @@
 }
 
 .form__fieldset{
-    border: 1px solid grey;
+    border: 1px solid rgb(216, 233, 214);
     border-radius: 10px;
     padding: 15px;
+    background-color: white;
+    box-shadow: 3px 3px 8px 2px #394139;
 }
 
 .form__text{
@@ -23,7 +29,7 @@
     max-width: 400px;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid grey
+    border: 1px solid grey;
 }
 
 .form__field:invalid{
@@ -46,10 +52,11 @@
     padding: 20px;
     border-radius: 10px;
     border: none;
-    background-color: hsl(180, 38%, 30%);
+    background-color: #2f6a6a;
     color: white;
     font-size: 20px;
     cursor: pointer;
+    box-shadow: 3px 3px 8px 2px #535a53;
     transition: opacity, 100ms;
 }
 

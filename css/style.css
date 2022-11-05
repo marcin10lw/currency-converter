@@ -9,5 +9,12 @@ html{
 .body{
     font-family: "Montserrat", sans-serif;
     padding: 20px;
-    background-image: url(../images/calculatorBackground.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.body--backgroundImage{
+    background: center / cover fixed url("../images/calculatorBackground.png");
 }
