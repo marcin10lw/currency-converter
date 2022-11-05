@@ -10,4 +10,4 @@ This time I've got a simple currency calculator that can convert EUR/USD to PLN.
 
 ## Check it out!
 
-[![](gifs/currencyCalculatorReadmeIcon.gif)](https://marcin10lw.github.io/currencyCalculator/)
+[![](gifs/readmeIcon.gif)](https://marcin10lw.github.io/currencyCalculator/)
