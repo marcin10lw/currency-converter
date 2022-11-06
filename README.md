@@ -4,10 +4,16 @@
 
 This time I've got a simple currency calculator that can convert EUR/USD to PLN.
 
-## Page Preview
+# YouCode
 
-![Page preview](images/pageScreenshot.png)
+This page is a task within [YouCode](https://youcode.pl/zostawiam-maila/).
 
-## Check it out!
+YouCode is a frontend development online school with great community.
+
+# Page Preview
+
+![Page Gif](/Gifs/currencyCalculatorPreview.gif)
+
+# Check it out!
 
 [![](images/readmeIcon.png)](https://marcin10lw.github.io/currencyCalculator/)
