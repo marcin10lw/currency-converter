@@ -13,17 +13,13 @@
   selectElement.addEventListener("change", onChangeTextContentSwitch);
 
   const getRate = (currency) => {
-    let finalRate;
     switch (currency) {
       case "eur":
-        finalRate = rateEUR;
-        break;
+        return rateEUR;
 
       case "usd":
-        finalRate = rateUSD;
-        break;
+        return rateUSD;
     }
-    return finalRate;
   };
 
   const updateResultText = (amount, result, currency) => {
