@@ -10,6 +10,12 @@ This page is a task within [YouCode](https://youcode.pl/zostawiam-maila/).
 
 YouCode is a frontend development online school with great community.
 
+# Technologies used
+
+    -BEM
+    -FLEXBOX
+    -ES6+ Features
+
 # Page Preview
 
 ![Page Gif](/Gifs/currencyCalculatorPreview.gif)
