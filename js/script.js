@@ -1,4 +1,5 @@
 {
+  const selectElement = document.querySelector(".js-selectElement");
   const rateEUR = 4.72;
   const rateUSD = 4.77;
 
@@ -7,9 +8,6 @@
     const inEuro = selectElement.value === "eur";
     exchangeElement.innerText = inEuro ? rateEUR : rateUSD;
   };
-
-  const selectElement = document.querySelector(".js-selectElement");
-  selectElement.addEventListener("change", onChangeTextContentSwitch);
 
   const getRate = (currency) => {
     switch (currency) {
@@ -41,19 +39,18 @@
     const inputElement = document.querySelector(".js-inputElement");
 
     const amount = +inputElement.value;
-
     const currency = selectElement.value;
 
-    let finalRate = getRate(currency);
+    const finalRate = getRate(currency);
 
-    let result = amount * finalRate;
+    const result = amount * finalRate;
 
     updateResultText(amount, result, currency);
   };
 
   const init = () => {
     const formElement = document.querySelector(".js-form");
-
+    selectElement.addEventListener("change", onChangeTextContentSwitch);
     formElement.addEventListener("submit", onFormSubmit);
   };
 
