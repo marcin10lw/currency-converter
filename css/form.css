@@ -14,7 +14,7 @@
     border-radius: 10px;
     padding: 15px;
     background-color: white;
-    box-shadow: 3px 3px 8px 2px #394139;
+    box-shadow: 2px 2px 8px 4px #464946;
 }
 
 .form__text{
@@ -56,7 +56,7 @@
     color: white;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 3px 3px 8px 2px #535a53;
+    box-shadow: 2px 2px 8px 4px #464946;
     transition: opacity, 100ms;
 }
 
