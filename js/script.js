@@ -1,6 +1,4 @@
 {
-  const selectElement = document.querySelector(".js-selectElement");
-
   const rateEUR = 4.72;
   const rateUSD = 4.77;
 
@@ -11,6 +9,7 @@
     exchangeElement.textContent = inEuro ? rateEUR : rateUSD;
   };
 
+  const selectElement = document.querySelector(".js-selectElement");
   selectElement.addEventListener("change", onChangeTextContentSwitch);
 
   const ChooseRate = (currency) => {
