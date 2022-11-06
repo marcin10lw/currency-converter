@@ -49,7 +49,7 @@
 
     const currency = selectElement.value;
 
-    let finalRate = GetRate(currency);
+    let finalRate = getRate(currency);
 
     let result = amount * finalRate;
 
