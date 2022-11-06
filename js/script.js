@@ -12,7 +12,7 @@
   const selectElement = document.querySelector(".js-selectElement");
   selectElement.addEventListener("change", onChangeTextContentSwitch);
 
-  const ChooseRate = (currency) => {
+  const getRate = (currency) => {
     let finalRate;
     switch (currency) {
       case "eur":
@@ -49,7 +49,7 @@
 
     const currency = selectElement.value;
 
-    let finalRate = ChooseRate(currency);
+    let finalRate = GetRate(currency);
 
     let result = amount * finalRate;
 
