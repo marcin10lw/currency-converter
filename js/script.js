@@ -4,7 +4,6 @@
 
   const onChangeTextContentSwitch = () => {
     const exchangeElement = document.querySelector(".js-exchangeElement");
-    exchangeElement.textContent = rateEUR;
     const inEuro = selectElement.value === "eur";
     exchangeElement.textContent = inEuro ? rateEUR : rateUSD;
   };
