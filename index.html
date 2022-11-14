@@ -20,16 +20,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
-    <title>Kalkulator Walut</title>
+    <title>Currency calculator</title>
   </head>
   <body class="body body--backgroundImage">
     <div class="container">
       <form class="form js-form">
         <fieldset class="form__fieldset">
-          <legend class="form__legend">Kalkulator walut</legend>
+          <legend class="form__legend">Currency calculator</legend>
           <p>
             <label>
-              <span class="form__text">Kwota w:</span>
+              <span class="form__text">Value in:</span>
 
               <select class="form__field js-selectElement" name="whichCurrency">
                 <option value="eur">EUR</option>
@@ -40,7 +40,7 @@
 
           <p>
             <label>
-              <span class="form__text">Podaj wartość*:</span>
+              <span class="form__text">Enter value*:</span>
               <input
                 class="form__field js-inputElement"
                 type="number"
@@ -51,18 +51,18 @@
           </p>
 
           <p>
-            <span class="form__text">Aktualny kurs:</span>
+            <span class="form__text">Current exchange:</span>
             <strong class="form__strongElement js-exchangeElement">4.72</strong>
           </p>
 
           <p>
-            <span class="form__text">Wartość w PLN</span>
+            <span class="form__text">Value in PLN</span>
             <strong class="form__strongElement js-resultElement">N/A</strong>
           </p>
         </fieldset>
 
         <p>
-          <button class="form__submitButton">Przelicz</button>
+          <button class="form__submitButton">Calculate</button>
         </p>
 
         <p>
