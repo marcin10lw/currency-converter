@@ -22,4 +22,4 @@ YouCode is a frontend development online school with great community.
 
 # Check it out!
 
-[![](images/readmeIcon.png)](https://marcin10lw.github.io/currencyCalculator/)
+[![](images/readmeIcon.png)](https://marcin10lw.github.io/currency-converter/)
